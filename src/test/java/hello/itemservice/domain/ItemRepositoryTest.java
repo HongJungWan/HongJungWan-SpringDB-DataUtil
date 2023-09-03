@@ -13,6 +13,9 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * 인터페이스를 테스트하자.
+ */
 @SpringBootTest
 class ItemRepositoryTest {
 
