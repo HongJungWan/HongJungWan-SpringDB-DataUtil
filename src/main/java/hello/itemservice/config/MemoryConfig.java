@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MemoryConfig {
-
     @Bean
     public ItemService itemService() {
         return new ItemServiceV1(itemRepository());
@@ -19,5 +18,4 @@ public class MemoryConfig {
     public ItemRepository itemRepository() {
         return new MemoryItemRepository();
     }
-
 }

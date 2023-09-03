@@ -16,7 +16,6 @@ import java.util.List;
 @RequestMapping("/items")
 @RequiredArgsConstructor
 public class ItemController {
-
     private final ItemService itemService;
 
     @GetMapping
@@ -58,5 +57,4 @@ public class ItemController {
         itemService.update(itemId, updateParam);
         return "redirect:/items/{itemId}";
     }
-
 }
