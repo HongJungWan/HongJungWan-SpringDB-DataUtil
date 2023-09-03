@@ -30,9 +30,12 @@ dependencies {
     //Spring Boot Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+    //JdbcTemplate
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
     //H2 DataBase
     runtimeOnly 'com.h2database:h2'
-    
+
     //Test-Lombok
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
