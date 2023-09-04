@@ -9,3 +9,13 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password: password
+
+  #MyBatis
+  mybatis:
+    type-aliases-package: hello.itemservice.domain
+    configuration:
+      map-underscore-to-camel-case: true
+
+  logging:
+    level:
+      hello.itemservice.repository.mybatis: trace
